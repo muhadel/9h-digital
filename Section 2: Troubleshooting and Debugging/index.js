@@ -2,7 +2,7 @@ const axios = require("axios");
 
 async function fetchData() {
   try {
-    const response = await axios.get("https://newsapi.org/v2/everything?q=tesla&from=2024-10-08&sortBy=publishedAt&apiKey=24bededf162549178589e3b3ff8d7721");
+    const response = await axios.get("https://api.example.com/data");
 
     // Validate if response data contains a valid structure
     if (!response.data || typeof response.data !== "object") {
